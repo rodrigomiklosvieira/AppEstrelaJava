@@ -4,61 +4,75 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/colorBackground"
+    android:orientation="vertical"
     tools:context=".Login_Activity">
 
     <android.support.v7.widget.Toolbar
+        android:id="@+id/idToobar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/idToobar"
-        app:title="Sign In"
-        app:titleTextColor="@color/colorFonte"
         android:scrollbarSize="25dp"
-        >
-    </android.support.v7.widget.Toolbar>
+        app:title="Sign In"
+        app:titleTextColor="@color/colorFonte"></android.support.v7.widget.Toolbar>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="User Name/e mail address"
-        android:textColor="@color/colorFonte"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="30dp"
-        android:textSize="20dp"/>
-
-    <EditText
-        android:layout_width="350dp"
-        android:layout_height="40dp"
-        android:layout_marginLeft="30dp"
-        android:background="@color/colorButton"
-        android:layout_marginTop="5dp"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Password"
-        android:textColor="@color/colorFonte"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="30dp"
-        android:textSize="20dp"/>
-
-    <EditText
-        android:layout_width="350dp"
-        android:layout_height="40dp"
-        android:layout_marginLeft="30dp"
-        android:background="@color/colorButton"
-        android:layout_marginTop="5dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="30dp">
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
 
-        <ImageView
-            android:layout_width="wrap_content"
+
+        <TextView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/button"/>
+            android:text="User Name/e mail address"
+            android:textColor="@color/colorFonte"
+            android:textSize="20dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorButton" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Password"
+            android:textColor="@color/colorFonte"
+            android:textSize="20dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorButton" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorButton"
+                android:text="Create a new account"
+                android:textColor="#fff" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="19dp"
+                android:background="@color/colorButton"
+                android:text="Sign In"
+                android:textColor="#fff" />
+        </LinearLayout>
     </LinearLayout>
 </LinearLayout>
